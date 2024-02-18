@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Experiment 5</title>
+    <link  rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="heading"><h2 align="center">Lab 5: A student registration page using HTML tags and apply 
+        box model using external CSS.</h1> 
+        <h3 align="center">Harsh Bang | 7057220007 | Sem-4 CS(DS) Batch 2024-26</h2>
+        <hr>
+    </div>
+    
+    <div align="center" class="container">
+        <form>
+            <fieldset class="border">
+            <legend align="center"><h1>Student Registration:</h1></legend>
+        
+                <label for="fName">First name:</label> <br>
+                <input type="text" id="fName" name="fname" required> <br>
+
+                <label for="lName">Last name:</label> <br>
+                <input type="text" id="lName" name="lname" required> <br>
+
+                <label for="dob">Date of Birth:</label> <br>
+                <input type="date" id="dob" name="dob" required> <br> <br>
+
+                <div class="grp">
+                    <div class="add"><label for="address">Address:</label> <br>
+                    <input type="text" id="add_state" name="add_state" placeholder="City, State"> 
+                    </div>
+
+                    <div class="pin"><label for="pincode">Pincode:</label><br>
+                    <input type="text" id="pin" name="pin"  pattern="[0-9]{6}" required> <br> <br>
+                    </div>
+                </div>
+
+                <label  for="phone"> Mobile number: </label> <br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="(+91)" required > <br> 
+                
+                <label for="email">Mail:</label> <br>
+                <input type="email" id="email" name="email" required> <br> <br>
+
+                <label for="entrance">Entrance marks:</label> <br>
+                <input  type="text" id="entrance" name="entrance" placeholder="percentile" required> <br> <br>
+
+                <button type="submit">REGISTER</button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>

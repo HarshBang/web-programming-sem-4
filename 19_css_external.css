@@ -1,0 +1,31 @@
+* {
+font-family: "Courier New", monospace;
+color: red;
+background-color: black; }
+
+h1, h2 {
+font-family:"Brush Script MT", cursive;
+color: green;}
+
+.kuch_bhi {
+color: blue;}
+
+
+.kuch_bhi>a {
+color: lightblue !important;}
+
+.kuch_bhi>a {
+color: blue;}
+
+
+#introduction{
+color: yellow;}
+
+#hs a{
+color: gold;
+font-size: 150%}
+
+
+
+h1 + p{}
+h1 ~ p {}

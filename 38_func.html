@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Func</title>
+  </head>
+  <body>
+    <script>
+      function convert(degF) {
+        var degC = ((degF - 32) * 5) / 9;
+        return degC;
+      }
+
+      var degF = [212, 32, -459.15];
+      var degC = [];
+
+      for (var i = 0; i < degF.length; i++) {
+        degC[i] = convert(degF[i]);
+      }
+
+      for (var j = 0; j < degC.length; j++) {
+        document.write("Value " + j + " was " + degF[j] + "\xb0F ");
+        document.write("Which is " + degC[j] + "\xb0C <br/>");
+      }
+    </script>
+  </body>
+</html>

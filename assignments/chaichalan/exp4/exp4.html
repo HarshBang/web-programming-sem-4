@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Country Capital Selector</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        select {
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        #capitalDisplay {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        /* Custom styles for the capital display */
+        #capitalDisplay {
+            color: #fff;
+            background-color: #333;
+            padding: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="countrySelect">Select a Country:</label>
+    <select id="countrySelect" onchange="displayCapital()">
+        <option value="none">Select a country</option>
+        <option value="india">INDIA</option>
+        <option value="uk">UK</option>
+        <option value="france">France</option>
+        <option value="germany">Germany</option>
+        <option value="japan">Japan</option>
+    </select>
+
+    <div id="capitalDisplay"></div>
+<script>
+        function displayCapital() {
+            var countrySelect = document.getElementById("countrySelect");
+            var capitalDisplay = document.getElementById("capitalDisplay");
+            
+            
+            var selectedCountry = countrySelect.value;
+
+        
+            var countryCapitalMap = {
+                "india": "Newdelhi",
+                "uk": "London",
+                "france": "Paris",
+                "germany": "Berlin",
+                "japan": "Tokyo"
+            };
+
+            
+            if (selectedCountry !== "none") {
+                capitalDisplay.innerHTML = "Capital: " + countryCapitalMap[selectedCountry];
+            } else {
+                capitalDisplay.innerHTML = "select country:";
+            }
+        }
+</script>
+</body>
+</html>

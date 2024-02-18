@@ -1,0 +1,14 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+text-align: center;
+padding: 20px;
+}
+
+#capital {
+  font-size: 20px;
+  color: blue;
+  background: yellow;
+  padding: 15px;
+  border: 1px solid rgb(255, 255, 255);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This is a test page</title>
+  </head>
+  <body>
+    <span>Below is a table: </span>
+    <br /><br />
+    <table border="4px">
+      <tr>
+        <td>R1C1</td>
+        <td>R2C2</td>
+      </tr>
+      <tr>
+        <td>R2C1</td>
+        <td>R2C2</td>
+      </tr>
+    </table>
+
+    <script>
+      var tdele = document.getElementsByTagName("td");
+      var len = tdele.length;
+      for (var i = 0; i < len; i++) {
+        tdele[i].style.color = "darkCyan";
+      }
+      tdele.style.color = "red";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <script>
+      var degF = parseInt(prompt("\xb0 F: ", 32), 10);
+      var degC = (5 / 9) * (degF - 32);
+
+      document.write(degF + "\xb0 F is " + degC + "\xb0 C <br/>");
+
+      if (degC < 0) {
+        document.write("That's below the freezing point of water");
+      }
+
+      if (degC == 100) {
+        document.write("That's the boiling point of the water");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- get input n convert to binary n hex -->

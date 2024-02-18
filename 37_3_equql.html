@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Break Continue Demo</h2>
+    <script>
+      for (var i = 0; i < 10; i++) {
+        if (i === 3) {
+          alert("No future Execution");
+          break;
+        }
+        document.write("The num is " + i + "<br/>");
+      }
+
+      document.write("<------------------------></br>");
+
+      for (var i = 0; i < 10; i++) {
+        if (i == 3) {
+          alert("Future Executions Skipped");
+          continue;
+        }
+        document.write("Value = " + i + "<br />");
+      }
+    </script>
+  </body>
+</html>

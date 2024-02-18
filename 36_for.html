@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gandhi ji Panel</title>
+  </head>
+  <body>
+    <script>
+      var fnds = ["Raju", "Rahul", "riya", "priya"];
+      var money = [505, 990, 666, 753];
+      var name;
+
+      for (name in fnds) {
+        document.write( name + "  ||  " + fnds[name] + "<br/>");
+      }
+
+      document.write("<hr/>");
+
+      for (name of fnds) {
+        document.write(name + "  ||  " + name + "<br/>");
+      }
+
+      document.write("<hr/>");
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ch 3, ex 4</title>
+  </head>
+  <body>
+    <script>
+      var degF = [212, 32, -459.15];
+      var degC = [];
+
+      for (var i = 0; i <= 2; i++) {
+        degC[i] = (5 / 9) * (degF[i] - 32);
+      }
+
+      for (let j = 2; j >= 0; j--) {
+        document.write("val" + j + " was " + degF[j] + "\xb0 F <br/>");
+
+        document.write("which is " + degC[j] + "\xb0 C <br/> <br/>");
+      }
+    </script>
+  </body>
+</html>
+

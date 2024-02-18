@@ -1,0 +1,160 @@
+<html>
+<body>
+
+	<form action='https://www.example.com/subscribe.php' method='get'>
+	<p>This is where the form control will appear</p>
+	</form>
+
+<hr/>
+	<form>
+	<p>User name: <input type="text" name="username" size="25" maxlength="4" /> </p>
+
+	<p>Mail: <input type="text" name="mail" size="31" maxlength="30" /> </p>
+
+	<p>Password: <input type="password" name="pass"  size="26"/> </p>
+
+	<P>Text area:</p> <textarea name='comments' cols='75' rows='14' placeholder="Enter your COMMENTS.."></textarea>
+
+	<hr/>
+
+	<p> Select: <br/>
+		<input type="radio" name="genre" value="rk" checked="checked"/> Rock
+		<input type="radio" name="genre" value="pap" /> Paper
+		<input type="radio" name="genre" value="scr" /> Scissor
+	 </p>
+
+	<hr/>
+	
+	<p>Select: <br/>
+		<input type="checkbox" name="service" value="rk" /> Rock
+		<input type="checkbox" name="service" value="pap" /> Paper
+		<input type="checkbox" name="service" value="scr" /> Scissor
+	</p>
+	
+	<hr/>
+	
+	<p>De-select: <br/>
+		<input type="checkbox" name="service" value="rk" checked="checked"/> Rock
+		<input type="checkbox" name="service" value="pap" checked="checked"/> Paper
+		<input type="checkbox" name="service" value="scr" checked="checked"/> Scissor
+	</p>
+
+	<hr/>
+
+	<p>Select: </p>
+	<select name="School">
+		<option value="eng">STME</option>
+		<option value="pharma">SPTM</option>
+		<option value="law">SOL</option>
+	</select>
+
+	<hr/>
+	
+	<p>Multy select box: </p>
+	<select name="School" size="5" multiple="multiple">
+		<option value="eng">STME</option>
+		<option value="pharma">SPTM</option>
+		<option value="law">SOL</option>
+		<option value="bba">BBA</option>
+		<option value="bcom">BCOM</option>
+		<option value="mba">MBA</option>
+	</select>	
+
+	</form>
+
+	<hr/>
+	<form action="https://www.example.com/upload.php" method="post">
+	<p> Upload a mp3 file here: </p>
+	<input type="file" name="choose mp3" /> <br/> 
+	<input type="submit" value="Submit mp3" />
+	</form>
+
+	<hr/>
+	<form action="https://www.example.com/subscribe.php" method="post">
+	<p> Supscribe: </p>
+	<input type="text" name="email" /> 
+	<input type="submit" name="subscribe" value="subpcribe" />
+	</form>
+
+	<hr/>
+	<form action="https://www.example.org/subscribe.php">
+	<p> Supscribe: </p>
+	<input type="text" name="email" /> 
+	<input type="image" src="images/jjk_desk.png" width="100" height="20" />
+	</form>
+
+	<hr/>
+	<form action="https://www.example.com/add.php">
+	<button><img src="images/jjk_desk.png" alt="ADD+" width="10" height="10"/> Add </button>
+	<input type="hidden" name="bookmark" value="lyrics" /> 
+	</form>	
+
+	<hr/>
+	<label>>>> Age: <input type="text" name="age" /></label> <br/>
+	Gender:
+	<input id="female" type="radio" name="gender" value="f">
+	<label for="female">Female</label>
+	<input id="male" type="radio" name="gender" value="m">
+	<label for="male">Male</label>
+	
+	<hr/>
+	<fieldset>
+	<legend>Sign in</legend>
+	<label>sapID: <br/>
+	<input type="text" name="id" /></label><br/>
+	<label>Pass: <br/>
+	<input type="text" name="pass" required="required" /></label><br/>
+	<input type="submit" value="submit" />
+	</fieldset>
+	
+	<hr/>
+	<fieldset>
+
+	<fieldset>
+	<legend>Name</legend>
+	<label>First Name: <br/>
+	<input type="text" name="fn" /></label><br/>
+	<label>Middle Name: <br/>
+	<input type="text" name="mn" /></label><br/>
+	<label>Last Name: <br/>
+	<input type="text" name="ln" /></label><br/>
+	</fieldset>	
+	
+	<fieldset>
+	<legend>Address</legend>
+	<label>Door Number: <br/>
+	<input type="text" name="dn" /></label><br/>
+	<label>City: <br/>
+	<input type="text" name="ct" /></label><br/>
+	</fieldset>	
+
+	<fieldset>
+	<legend>Contact</legend>
+	<label>Email: <br/>
+	<input type="text" name="eml" /></label><br/>
+	<label>Website: <br/>
+	<input type="text" name="com" /></label><br/>
+	<label>Phone number: <br/>
+	<input type="text" name="no" /></label><br/>
+	</fieldset>	
+	</fieldset>	
+
+	<hr/>
+	<form action="xyz" method="post">
+	<label for="username">Departure date:</label>
+	<input type="date" name="depart" />
+	<input type="submit" value="Submit" />
+	</form>
+	
+	<hr/>
+	<marquee direction="right" behaviour="scroll" >< helleo ></marquee> 
+	<marquee direction="left" behaviour="scroll" >< helleo ></marquee> 
+	
+	<hr/>
+	<input type="email" name="email" />
+	<input type="submit" value="Submit" />
+	
+	
+	
+</body>	
+</html>

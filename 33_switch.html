@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CH3, exp3</title>
+  </head>
+  <body>
+    <script>
+      var ip = prompt("Pick 1:3 :", "");
+      ip = parseFloat(ip);
+
+      switch (ip) {
+        case 1:
+          document.write("Too low!");
+          break;
+
+        case 2:
+          document.write("You guessed the secret number!");
+          break;
+
+        case 3:
+          document.write("Too HIGH!");
+          break;
+
+        default:
+          document.write("Enter BTW 1 to 3");
+          break;
+      }
+
+      document.write("<br/>Iam here.... hey.. namiiii.  outside of the switch");
+    </script>
+  </body>
+</html>

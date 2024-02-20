@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 6</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("./dims.png");
+            background-size: cover;
+            margin:0;
+
+        }
+        p{
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            text-align: center;
+            background-color: rgb(145, 145, 145);
+            padding:15px;
+            border-radius: 15px;
+            width: 300px;
+            margin:10px auto;
+            padding:20px;
+        }
+
+        h4{
+            background-color: rgb(255, 255, 255);
+            margin:0;
+            padding:10px;
+            text-align: center;
+        }
+
+        #colordiv{
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 20px;
+        margin:0 auto;
+        padding:20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h4>Programs on basic Javascript: operators, conditional 
+            statements, loops <br/>
+            and write a JavaScript code to take color from user and apply 
+            that color to Div tag<h4>
+    </header>
+
+    <script>
+        var num1 = 10;
+        var num2 = "10";
+        var num3 = 20;
+        var full_m = 120;
+        var total_m = (16+14+18+6+16+20);
+        var avg_m = (total_m/6);
+        var marks_lst = (full_m - total_m)
+        var perc = ((total_m * 100 )/full_m);
+        document.write("<p> <b>This is Operators script</b><br/> <br/>Total Marks out of 120 = ", total_m,
+            " <br />Average marks = ",avg_m,
+             "<br /> Marks Lost of 120 = ",marks_lst,
+             " Percentage out of 100 = ",perc, 
+             " <br/>Equals (10==10) ",num1==num2,
+             " <br/>Equals (num 3) = ",num3, 
+             "</br> Strict Equal (10===10) ",num1===num2,
+             "<br/> Greater than (10>10) ",num1 > 10,
+             "<br/> Greater than (10<11) ",num1 < 11, 
+             " <br/>Equals (10+=20) ",num1+=num3, 
+             " <br/>Equals (10-=20) ",num1-=num3,);
+
+            </script> 
+
+<script>
+var age = 25;
+if (age > 18){
+    document.write("<p>If condition --- Eligible to Vote </p>")
+}
+</script>
+
+<script>
+    var num = 29;
+    if(num % 2 == 0){
+        document.write("<p>If Else --- Even </p>");
+    }
+    else {
+        document.write("<p>If Else --- Odd </p>");
+    }
+</script>
+
+<script>
+    var day = 2;
+
+switch(day) {
+  case 1:
+    document.write("<p>Switch -- Monday</p>");
+    break;
+  case 2: 
+    document.write("<p>Switch -- Tuesday</p>");
+    break;
+  case 3:
+    document.write("<p>Switch -- Wednesday</p>");
+    break;
+  default:
+    document.write("<p>Switch -- Invalid day</p>");  
+}
+</script>
+
+<script>
+        var i = 5;
+        document.write("<p><b>The below is the For-Loop script</b></p>")
+        for(i=1 ; i <= 5; i++){
+        document.write("<p>The Number is ",i,"</p>");
+    }
+</script>
+
+
+<div id="colordiv">
+    <h2>Script to take color from user</h2>
+    <input type="color" id="colors">
+    <button onclick="applyColor()">Apply color</button>
+</div>
+    
+    <script>
+        function applyColor() { 
+            var color = document.getElementById("colors").value;
+            var colorDiv = document.getElementById("colordiv");
+            colorDiv.style.backgroundColor = color;
+        }
+    </script>
+
+</body>
+</html>

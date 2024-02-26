@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="angular.min.js"></script>
+  </head>
+  <body>
+    <h1>Expression in AngularJS</h1>
+
+    <div
+      ng-app=""
+      ng-init="quantity=2; cost=130; student={firstname:'John', lastname:'Austin', rollno:101};
+                            marks=[80, 90, 75, 73, 60]"
+    >
+      <p>Hello {{student.firstname + " " + student.lastname}}!</p>
+      <p>Expense on Books : {{cost * quantity}} RS</p>
+      <p>Roll No: {{student.rollno}}</p>
+      <p>Marks(Math): {{marks[3]}}</p>
+    </div>
+  </body>
+</html>

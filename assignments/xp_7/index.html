@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Form VAL using JS</title>
+
+    <style>
+        #box{
+            margin: 550px;
+            margin-top: 150px;
+        }    
+    </style>
+
+  </head>
+  <body>
+    <div class="heading">
+      <h2 align="center">Lab 7: Validation of HTML Forms using JavaScript.</h2>
+      <h3 align="center">
+        Harsh Bang | 7057220007 | Sem-4 CS(DS) Batch 2024-26
+      </h3>
+      <hr />
+    </div>
+
+    <div id="regForm" align="center">
+    <form id="registrationForm" onsubmit="return validateForm()">
+      <fieldset id="box">
+        <legend>REGISTER</legend>
+
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <br>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <br>
+
+        <div>
+          <input type="submit" value="SUBMIT">
+        </div>
+
+      </fieldset>
+    </div>
+    </form>
+
+    <script>
+        function validateForm() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        var errors = ""; 
+
+        if (username === "") {
+            errors += "Username is required\n";
+        }
+
+        if (password === "") {
+            errors += "Password is required\n";
+        } else if (password.length < 6) {
+            errors += "Password must be at least 6 characters long\n";
+        }
+
+        if (errors !== "") {
+            alert(errors);
+            return false;
+        }
+
+        return true;
+        }
+    </script>
+
+    </body>
+</html>

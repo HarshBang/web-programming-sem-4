@@ -23,6 +23,9 @@
       var tdele = document.getElementsByTagName("td");
       var len = tdele.length;
       for (var i = 0; i < len; i++) {
+        if (i == 3){
+          break;
+        }
         tdele[i].style.color = "darkCyan";
       }
       tdele.style.color = "red";

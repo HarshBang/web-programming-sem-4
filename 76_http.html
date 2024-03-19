@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <p>Today's welcome message is:</p>
+
+      <h1>{{myWelcome}}</h1>
+    </div>
+
+    <p>
+      The $http service request a page on the server, and response is set as the
+      variable.
+    </p>
+
+    <script>
+      var app = angular.module("myApp", []);
+      app.controller("myCtrl", function ($scope, $http) {
+        $http.get("76_welcome.html").then(function (response) {
+          $scope.myWelcome = response.data;
+        });
+      });
+    </script>
+  </body>
+</html>

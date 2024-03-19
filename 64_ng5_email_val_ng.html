@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ng</title>
+    <script src="/angular.min.js"></script>
+  </head>
+  <body>
+    <p>Enter your e-mail address.</p>
+    <p>
+      Angular JS will display an error message if the address is not an e-mail.
+    </p>
+
+    <form ng-app="" name="myForm">
+      Email:
+      <input type="email" name="myAddress" ng-model="text" />
+      <span ng-show="myForm.myAddress.$error.email"
+        >Not a valid e-mail address.</span
+      >
+    </form>
+  </body>
+</html>

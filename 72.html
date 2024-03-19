@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="namesCtrl">
+      <ul>
+        <li ng-repeat="x in names | filter : 'a'">{{x}}</li>
+      </ul>
+    </div>
+
+    <script>
+      angular.module("myApp", []).controller("namesCtrl", function ($scope) {
+        $scope.names = [
+          "apple",
+          "Banana",
+          "Chikku",
+          "Ice Apple",
+          "Honey Script",
+          "kela",
+        ];
+      });
+    </script>
+
+    <p>
+      This example displays only the names containing the letter "a" from (
+      apple, Banana, Chikku, Ice Apple, Honey Script, kela).
+    </p>
+  </body>
+</html>

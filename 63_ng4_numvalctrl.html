@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ng</title>
+    <script src="/angular.min.js"></script>
+  </head>
+  <body ng-app="numValApp" ng-controller="numValCtrl">
+    <h2>Number Val</h2>
+
+    <form name="numberForm">
+      <label>Enter a number:</label>
+      <input
+        type="text"
+        ng-model="number"
+        name="number"
+        ng-pattern="/^[0-9]*$/"
+        ng-minlength="10"
+        ng-maxlength="10"
+        required
+      />
+      <span ng-show="numberForm.number.$error.pattern"
+        >Please Enter A Valid Number.</span
+      >
+      <br /><br />
+
+      <button ng-disabled="numberForm.$invalid">SUBMIT</button>
+    </form>
+
+    <script>
+      var app = angular.module("numValApp", []);
+      app.controller("numValCtrl", function ($scope) {
+        $scope.number = "";
+      });
+    </script>
+  </body>
+</html>

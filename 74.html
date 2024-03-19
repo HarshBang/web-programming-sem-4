@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filters</title>
+    <script src="/angular.min.js"></script>
+  </head>
+  <body>
+    <h2>Angular filter app</h2>
+    <div ng-app="mainApp" ng-controller="studentCtrl">
+      <table border="1">
+        <tr>
+          <td>Enter first name:</td>
+          <td><input type="text" ng-model="student.firstName" /></td>
+        </tr>
+        <tr>
+          <td>Enter last name:</td>
+          <td><input type="text" ng-model="student.lastName" /></td>
+        </tr>
+        
+      </table>
+
+      <br />
+
+    <script>
+      var mainApp = angular.module("mainApp", []);
+
+      mainApp.controller("studentCtrl", function ($scope) {
+        $scope.student = {
+          firstName: "Harsh",
+          lastName: "Bang",
+          fees: 500,
+
+          subjects: [
+            { name: "Physics", marks: 58 },
+            { name: "Chemistry", marks: 60 },
+            { name: "Maths", marks: 73 },
+          ],
+
+          fullName: function () {
+            var studentObj;
+            studentObj = $scope.student;
+            return studentObj.firstName + " " + studentObj.lastName;
+          },
+        };
+      });
+    </script>
+  </body>
+</html>

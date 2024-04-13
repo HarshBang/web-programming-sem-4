@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <h2>ng-change Directive</h2>
+      Check to show/hide details
+      <input type="checkbox" ng-change="show()" ng-model="check" />
+      <br /><br />
+
+      <div ng-show="result">7 Crore!</div>
+    </div>
+
+    <script>
+      var app = angular.module("myApp", []);
+      app.controller("myCtrl", function ($scope) {
+        $scope.show = function () {
+          if ($scope.check == true) $scope.result = true;
+          else $scope.result = false;
+        };
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dependency</title>
+    <script src="/angular.min.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="myController">
+      <h3>Tutorial id is:</h3>
+      {{ID}}
+    </div>
+    <script>
+      var sample = angular.module("myApp", []);
+      sample.value("id", 70572200027);
+      sample.controller("myController", function ($scope, id) {
+        $scope.ID = id;
+      });
+    </script>
+  </body>
+</html>
